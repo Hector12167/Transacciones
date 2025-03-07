@@ -1,71 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.3</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>dual.transacciones</groupId>
-	<artifactId>superheroes-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>superheroes-api</name>
-	<description>Mi API REST de superheroes</description>
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-        <!-- Base de datos -->
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-                
-        <!-- Lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
-                
-		<dependency>
-		   <groupId>org.springdoc</groupId>
-		   <artifactId>springdoc-openapi-ui</artifactId>
-		   <version>1.6.5</version>
-		</dependency>
-        
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
-</project>
+{
+  "transaction_id": "test-transaction-unique-identifier",
+  "visual_enrichments": {
+    "merchant_clean_name": "Apple",
+    "merchant_logo_link": "https://resources.sandbox.tripledev.app/e80f8538-d02a-4851-bff6-2b3234395a2d.png",
+    "merchant_category": "not_found",
+    "google_places_id": "not_found",
+    "merchant_website": "not_found",
+    "updated": "2023-09-14T14:02:58.567759Z",
+    "brand_id": "9ad7172d-d4f5-416a-9f7e-d728a9865eef"
+  },
+  "merchant_location": {
+    "enabled": false
+  },
+  "subscriptions": {
+    "enabled": false
+  },
+  "co2_footprint": {
+    "enabled": false,
+    "emissions": "not_found"
+  },
+  "updated": "2024-06-26T15:45:28.609048Z",
+  "fraud": {
+    "enabled": false
+  },
+  "categories": [
+    {
+      "name": "Software"
+    },
+    {
+      "name": "Software Services"
+    }
+  ],
+  "contact": {
+    "enabled": false
+  },
+  "payment_processor": {
+    "enabled": false
+  }
+}
