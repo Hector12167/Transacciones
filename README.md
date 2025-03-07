@@ -1,9 +1,63 @@
-# Transacciones
-Transacciones con @Transactional y TransactionManager de Spring
+curl --ubicación --solicitud POST 'https://api.zizy.io/transacción' \
 
-## superheroes-api
-El proyecto es un API REST de Superh�roes desarrollado con Spring Boot y Spring Transactions.
+--header 'x-api-key: SU_CLAVE_API' \
 
-Para poder usarlo necesitar�s una base de datos donde tendr�s que crear el esquema y las tablas necesarias, esto ya lo tuviste que hacer durante las horas de clase.
+--header 'Tipo de contenido: aplicación/json' \
 
-Usa el application.properties para configurar la conexi�n con t� base de datos.
+--datos-raw '{
+
+"transaction_type": "TRANSACCIÓN_CON_TARJETA",
+
+"nombre_del_comerciante": "Andrés manuel",
+
+"banco": "banxico",
+
+"código_categoría_comerciante": "2001",
+
+"id_transacción": "8115124917",
+
+"transaction_timestamp": "viernes, 07 de marzo de 2025 16:33:05GMT",
+
+"monto_transacción": 1000.00,
+
+"moneda_de_transacción": "USD",
+
+"id_usuario": "8130437528",
+
+"id_cuenta": "afirme",
+
+"id_de_tarjeta": "4130980152901219"
+
+3
+
+4
+
+5-
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+}
